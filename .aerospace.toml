@@ -113,18 +113,18 @@ ctrl-alt-i = 'resize smart -500'
 ctrl-alt-k = 'resize smart +500'
 
 # See: https://nikitabobko.github.io/AeroSpace/commands#workspace
-ctrl-e = 'workspace E'
-ctrl-f = 'workspace F'
-ctrl-h = 'workspace H'
-ctrl-b = 'workspace 🪣'
-ctrl-c = 'workspace C'
+ctrl-alt-e = 'workspace ⬇️'
+ctrl-alt-f = 'workspace 📁'
+ctrl-alt-h = 'workspace 🏠'
+ctrl-alt-b = 'workspace 🪣'
+ctrl-alt-c = 'workspace 👨‍💻'
 
 # See: https://nikitabobko.github.io/AeroSpace/commands#move-node-to-workspace
-ctrl-alt-e = 'move-node-to-workspace E'
-ctrl-alt-f = 'move-node-to-workspace F'
-ctrl-alt-h = 'move-node-to-workspace H'
-ctrl-alt-b = 'move-node-to-workspace 🪣'
-ctrl-alt-c = 'move-node-to-workspace C'
+ctrl-alt-shift-e = ['move-node-to-workspace ⬇️', 'workspace ⬇️']
+ctrl-alt-shift-f = ['move-node-to-workspace 📁', 'workspace 📁']
+ctrl-alt-shift-h = ['move-node-to-workspace 🏠', 'workspace 🏠']
+ctrl-alt-shift-b = ['move-node-to-workspace 🪣', 'workspace 🪣']
+ctrl-alt-shift-c = ['move-node-to-workspace 👨‍💻', 'workspace 👨‍💻']
 
 # alt-shift-z = 'move-node-to-workspace Z'
 
@@ -135,7 +135,7 @@ alt-tab = 'workspace-back-and-forth'
 ctrl-alt-cmd-shift-j = 'move-workspace-to-monitor --wrap-around next'
 
 # See: https://nikitabobko.github.io/AeroSpace/commands#mode
-ctrl-alt-cmd-p = 'mode service'
+ctrl-alt-cmd-shift-p = 'mode service'
 
 # 'service' binding mode declaration.
 # See: https://nikitabobko.github.io/AeroSpace/guide#binding-modes
@@ -159,38 +159,38 @@ backspace = ['close-all-windows-but-current', 'mode main']
 # Home
 [[on-window-detected]]
 if.app-id = 'com.apple.Safari'
-run = "move-node-to-workspace H"
+run = "move-node-to-workspace 🏠"
 
 [[on-window-detected]]
 if.app-id = 'com.google.Chrome'
-run = "move-node-to-workspace H"
+run = "move-node-to-workspace 🏠"
 
 # Code
 [[on-window-detected]]
 if.app-id = 'com.microsoft.VSCode'
-run = "move-node-to-workspace C"
+run = "move-node-to-workspace 👨‍💻"
 
 # Auto connect Extra
 [[on-window-detected]]
 if.app-id = 'com.apple.reminders'
-run = "move-node-to-workspace E"
+run = "move-node-to-workspace ⬇️"
 
 [[on-window-detected]]
 if.app-id = 'org.ferdium.ferdium-app'
-run = "move-node-to-workspace E"
+run = "move-node-to-workspace ⬇️"
 
 [[on-window-detected]]
 if.app-id = 'com.apple.MobileSMS'
-run = "move-node-to-workspace E"
+run = "move-node-to-workspace ⬇️"
 
 # Finder
 [[on-window-detected]]
 if.app-id = 'com.apple.finder'
-run = "move-node-to-workspace F"
+run = "move-node-to-workspace 📁"
 
 [[on-window-detected]]
 if.app-id = 'com.binarynights.forklift-setapp'
-run = "move-node-to-workspace F"
+run = "move-node-to-workspace 📁"
 
 # Float
 [[on-window-detected]]
